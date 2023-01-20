@@ -18,9 +18,9 @@ RUN apt-get -y install make \
     g++-arm-linux-gnueabihf
 
 # install golang
-RUN wget -P /tmp https://dl.google.com/go/go1.15.6.linux-amd64.tar.gz
-RUN tar -C /usr/local -xzf /tmp/go1.15.6.linux-amd64.tar.gz
-RUN rm /tmp/go1.15.6.linux-amd64.tar.gz
+RUN wget -P /tmp https://dl.google.com/go/go1.19.5.linux-amd64.tar.gz
+RUN tar -C /usr/local -xzf /tmp/go1.19.5.linux-amd64.tar.gz
+RUN rm /tmp/go1.19.5.linux-amd64.tar.gz
 
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
